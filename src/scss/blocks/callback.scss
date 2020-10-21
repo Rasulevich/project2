@@ -1,0 +1,153 @@
+
+$var1: #f2f2f2;
+$var2: #ffffff;
+$var3: #1B1C21;
+$var4: #7E7E82;
+$var5: #41F6D7;
+$var6: #EAEAEA;
+$var7: #B5B6BC;
+$var8: #FF3E79;
+
+
+
+body {
+	margin: 0;
+}
+.modal{
+	margin: 0;
+	width: 450px;
+	min-width: 320px;
+	height: 100%;
+	box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 
+				16px 0px 32px rgba(14, 24, 80, 0.2);}
+.modal--callback{
+	display: none;
+	margin-left: auto;
+	margin-right: 0;
+}
+.modal--call{
+	display: none;
+	margin-left: auto;
+	margin-right: 0;
+}
+.modal__form{
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	width: 320px;
+	background-color: white;
+	@media screen and (min-width: 768px) {
+		min-width: 440px;
+		width: 440px;
+		height: 940px;
+	}
+}
+.callback {
+	&__input {
+		width: 376px;
+		background: #FFFFFF;
+		border: 1px solid #EAEAEA;
+		display: flex;
+		margin: 16px;
+		border-radius: 8px;
+		padding: 8px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	display: block;
+	&__title {
+		font-family: TT Lakes;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		color: $var3;
+		margin: 0;
+		margin-left: 16px;
+		padding: 0;
+		&::before {
+			content: '';
+			height: 40px;
+			width: 4px;
+			background-color: $var5;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 0;
+			margin-left: -10px;
+			margin-right: 6px;
+			margin-top: 30px;
+		}
+		&::before {
+			margin-left: -40px;
+			margin-right: 26px;
+		}
+	}
+	&__text {
+		font-family: TT Lakes;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0px;
+		text-align: left;
+		color: $var4;
+		margin: 16px;
+		&--color {
+			color: $var8;
+			text-decoration: none;
+		}
+	}
+	&__submit-button {
+		position: relative;
+		margin-left: 250px;
+	}
+	&-open {
+		display: block;
+	}
+	&__title {
+		margin-top: 24px;
+		margin-left: 30px;
+	}
+}
+
+.button__close {
+	margin-top: 24px;
+	margin-left: 16px;
+	margin-bottom: 20px;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		margin-left: -70px;
+		margin-top: 30px;
+	}
+}
+.phone-button__close {
+	margin-top: 24px;
+	margin-left: 16px;
+	margin-bottom: 20px;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		margin-left: -70px;
+		margin-top: 30px;
+	}
+}
+.submit-button--send {
+	background: url(../img/sendButton.png);
+	background-size: 100%;
+}
+.submit-buttons {
+	width: 136px;
+	height: 32px;
+	border: none;
+}
+.modal--call{
+    position: relative;
+	z-index: 20;
+	top:-25px;
+}
+.modal--callback{
+    position: relative;
+	z-index: 20;
+	top:-25px;
+}
+.textarea{
+	height: 100px;
+}
