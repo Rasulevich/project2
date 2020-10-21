@@ -1,0 +1,94 @@
+.article__content {
+    display: block;
+    margin-left: 10px;
+    &-inner {
+        height: 90px;
+        margin-left: 16px;
+        margin-right: 16px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        &-inner {
+            height: 160px;
+            margin-left: 16px;
+            margin-right: 16px;
+            width: 312px;
+            overflow: hidden;
+            padding: 5px;
+        }
+    }
+    @media screen and (min-width: 1366px) {  
+        &-inner {
+            height: 160px;
+            margin-left: 16px;
+            margin-right: 16px;
+            width: 400px;
+            overflow: hidden;
+        }
+    }    
+    @media screen and (min-width: 1366px) {
+        margin-left: 14px;
+    }
+}
+.article__text {
+	font-family: TT Lakes;
+	font-size: 14px;
+	line-height: 18px;
+    letter-spacing: 0.2px;
+    @media screen and (min-width: 768px) {
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+}
+.next-button::before {
+	content: '';
+    background: url(../img/expand.png) no-repeat;
+	height: 10px;
+	width: 5px;
+	padding: 5px;
+	margin-left: 8px;
+	display: flex;
+	margin-right: 16px;
+}
+.article__image {
+	width: 100%;
+    margin-top: 16px;
+    height: 100%;
+    @media screen and (min-width: 768px) {
+        width: 320px;
+        height: 260px;
+        margin-top: 16px;
+        margin-left: auto;
+        background: #f8f8f8;
+        border-radius: 6px;
+        margin-right: 16px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 500px;
+        height: auto;
+        margin-top: 16px;
+        margin-left: auto;
+        background: #f8f8f8;
+        border-radius: 6px;
+        margin-right: 46px;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+}
+.img-logo {
+    width: 100%;
+    max-width: 550px;
+    max-height: 300px;
+}
+.text--open{
+    @media screen and (max-width: 768px) {
+    height: auto;
+    }
+}
+.article__read-all-text{
+    margin-left: 12px;
+}
