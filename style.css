@@ -5,7 +5,11 @@
   margin-left: 0;
   position: relative;
   z-index: 20;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
+  @media screen and (min-width: 1366px) {
+    .menu-container {
+      box-shadow: none; } }
 
 .menu {
   display: flex;
@@ -149,6 +153,9 @@
 .overlay--visible {
   display: block;
   z-index: 10; }
+
+.wrapper {
+  width: 100%; }
 
 .content {
   min-width: 320px;
@@ -448,7 +455,9 @@
 
 .close-content {
   display: none;
-  position: absolute; }
+  position: absolute;
+  z-index: 5;
+  overflow: hidden; }
 
 .open-menu {
   display: block; }
@@ -469,7 +478,8 @@
     height: 100%; } }
 
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .modal {
   margin: 0;
@@ -1008,7 +1018,7 @@ body {
   @media (min-width: 768px) {
     .price {
       height: 480px;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       margin-left: 12px; } }
@@ -1043,9 +1053,8 @@ body {
   @media (min-width: 768px) {
     .price__item-capture {
       display: block;
-      width: 100%;
+      width: auto;
       max-height: 72px;
-      max-width: 1440px;
       margin-left: 16px;
       overflow: hidden;
       flex-wrap: nowrap;
@@ -1064,10 +1073,11 @@ body {
   border-radius: 6px; }
   @media (min-width: 768px) {
     .price__item {
-      width: 100%;
+      width: auto;
       max-height: 72px;
       max-width: 1440px;
       margin-left: 16px;
+      margin-right: 24px;
       overflow: hidden;
       flex-wrap: nowrap;
       margin-bottom: 0;
@@ -1198,35 +1208,25 @@ body {
       height: 64px; } }
 
 .name {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
   color: #1B1C21; }
-  @media (min-width: 768px) {
-    .name {
-      font-family: TT Lakes;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.2px;
-      color: #1B1C21; } }
 
 .money {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2x;
   color: #1B1C21; }
-  @media (min-width: 768px) {
-    .money {
-      font-family: TT Lakes;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.2x;
-      color: #1B1C21; } }
 
 .time {
-  color: #1B1C21;
-  display: flex; }
-  @media (min-width: 768px) {
-    .time {
-      font-family: TT Lakes;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.2px;
-      color: #1B1C21; } }
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21; }
 
 @media (min-width: 768px) {
   .name-capture {
@@ -1248,7 +1248,7 @@ body {
     color: #7E7E82;
     mix-blend-mode: normal;
     opacity: 0.72;
-    margin-left: -135px; } }
+    margin-left: -125px; } }
 
 @media (min-width: 768px) {
   .time-capture {
@@ -1259,7 +1259,7 @@ body {
     color: #7E7E82;
     mix-blend-mode: normal;
     opacity: 0.72;
-    margin-left: -220px; } }
+    margin-left: -200px; } }
 
 @media (min-width: 768px) {
   .section__footer-text {
