@@ -524,7 +524,6 @@ body {
   padding-bottom: 30px;
   position: absolute;
   z-index: 50;
-  top: -25px;
   right: 0; }
 
 .modal--call {
@@ -534,7 +533,6 @@ body {
   margin-bottom: 0;
   position: absolute;
   z-index: 50;
-  top: -25px;
   right: 0;
   padding-bottom: 25px; }
 
