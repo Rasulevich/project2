@@ -1,14 +1,8 @@
-.menu-container {
-  background-color: #f2f2f2;
-  margin-left: 0;
-  z-index: 20;
-  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
-  @media screen and (min-width: 1366px) {
-    .menu-container {
-      box-shadow: none; } }
-
 .menu {
-  display: flex;
+  display: none;
+  z-index: 20;
+  margin-left: 0;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
   flex-direction: column;
   max-width: 320px;
   width: 320px;
@@ -37,6 +31,7 @@
     position: relative;
     height: 40px;
     padding: 8px;
+    outline: none;
     margin-left: 18px;
     text-decoration: none;
     color: #1B1C21;
@@ -94,7 +89,10 @@
   @media screen and (min-width: 1366px) {
     .menu {
       overflow: auto;
-      height: 100%; }
+      height: 100%;
+      box-shadow: none;
+      display: flex;
+      width: 100%; }
       .menu__logo {
         display: block; }
       .menu__nav-item {
@@ -105,6 +103,7 @@
   height: 40px;
   border-radius: 20px;
   cursor: pointer;
+  outline: none;
   border: 0; }
   .button--close {
     background-image: url(./static/close.png); }
@@ -130,16 +129,12 @@
   .menu__close-button {
     display: none; } }
 
-.open-menu {
+.menu--active {
   display: block;
   z-index: 20;
   position: absolute;
   height: 100%;
   overflow: scroll; }
-
-.menu-close {
-  visibility: hidden;
-  position: absolute; }
 
 .overlay {
   display: none;
@@ -239,6 +234,7 @@
   height: 40px;
   border-radius: 20px;
   cursor: pointer;
+  outline: none;
   border: 0; }
   .button--call {
     background-image: url(./static/call.png); }
@@ -311,6 +307,9 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #1B1C21; } }
+
+a {
+  outline: none; }
 
 @media screen and (min-width: 768px) {
   .header__contact-list::after {
@@ -462,35 +461,17 @@
     border-radius: 6px; }
 
 .next-button {
-  background-color: #F8F8F8;
   border: none;
-  font-family: TT Lakes;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
   display: flex;
-  padding: 0; }
+  outline: none;
+  cursor: pointer; }
 
-.menu-container {
-  display: none; }
-
-.menu-close {
-  display: none;
-  position: absolute; }
-
-.close-content {
-  display: none;
-  position: absolute;
-  z-index: 5;
-  overflow: hidden; }
-
-.open-menu {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .section__next-button {
-    display: flex;
-    flex-wrap: nowrap; } }
+.section__next-button {
+  cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .section__next-button {
+      display: flex;
+      flex-wrap: nowrap; } }
 
 @media screen and (min-width: 1366px) {
   .wrapper {
@@ -498,7 +479,6 @@
 
 @media screen and (min-width: 1366px) {
   .menu-container {
-    flex-basis: 20;
     display: flex; } }
 
 body {
@@ -591,7 +571,8 @@ body {
     margin: 16px; }
     .callback__text--color {
       color: #FF3E79;
-      text-decoration: none; }
+      text-decoration: none;
+      outline: none; }
   .callback__submit-button {
     position: relative;
     margin-left: 150px; }
@@ -631,7 +612,8 @@ body {
 
 .button__close {
   margin-top: 44px;
-  margin-left: 14px; }
+  margin-left: 14px;
+  outline: none; }
   @media screen and (min-width: 768px) {
     .button__close {
       position: absolute;
@@ -639,6 +621,7 @@ body {
       margin-top: 55px; } }
 
 .phone-button__close {
+  outline: none;
   margin-top: 44px;
   margin-left: 16px;
   margin-bottom: 20px; }
@@ -655,7 +638,8 @@ body {
 .submit-buttons {
   width: 136px;
   height: 32px;
-  border: none; }
+  border: none;
+  outline: none; }
 
 .textarea {
   height: 100px; }
@@ -688,6 +672,9 @@ body {
         position: absolute;
         left: -1px;
         top: 64px; } }
+
+.modal--active {
+  display: block; }
 
 @font-face {
   font-family: 'TT Lakes';
@@ -784,8 +771,14 @@ body {
 .text--open {
   height: auto; }
 
-.article__read-all-text {
-  margin-left: 12px; }
+.article__next-button {
+  margin-left: 12px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding: 0;
+  background-color: #f8f8f8; }
 
 .footer {
   min-width: 320px; }
@@ -805,6 +798,7 @@ body {
   text-decoration: none;
   color: inherit;
   margin-left: auto;
+  outline: none;
   margin-right: auto; }
 
 .footer__list {
@@ -902,6 +896,7 @@ body {
 
 .brands__link {
   text-decoration: none;
+  outline: none;
   width: 240px;
   height: 72px;
   box-sizing: border-box;
@@ -916,37 +911,41 @@ body {
       height: 72px; } }
 
 .section__title {
-  padding-bottom: 0;
-  margin-bottom: 16px;
-  margin: 0;
-  margin-left: 16px;
+  margin-left: 28px;
   background: linear-gradient(90deg, #F8F8F8 40%, #FFFFFF 60%);
   width: auto;
-  height: 48px;
   font-family: "TT Lakes Thin",sans-serif;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 58px;
   letter-spacing: -0.2px;
   color: #7e7e82;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: nowrap; }
   @media (min-width: 768px) {
     .section__title {
-      padding: 20px;
+      margin-left: 36px;
       background: linear-gradient(90deg, #F8F8F8 40%, #FFFFFF 60%);
       padding-bottom: 0;
-      margin-bottom: 12px;
-      width: auto;
-      height: 56px; } }
+      margin-top: 10px;
+      width: auto; } }
 
 .brands__button {
-  margin-left: auto; }
+  margin-left: auto;
+  outline: none; }
 
-.section__next-button {
+.brands__next-button {
   display: none; }
   @media (min-width: 768px) {
-    .section__next-button {
+    .brands__next-button {
+      display: flex;
       margin-left: 28px;
-      display: block; } }
+      padding: 16px;
+      padding-left: 0;
+      background-color: #f8f8f8;
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px; } }
 
 .brands__pagination {
   border: none;
@@ -954,28 +953,6 @@ body {
   @media (min-width: 768px) {
     .brands__pagination {
       display: none; } }
-
-@media (min-width: 768px) {
-  .brands-next-button {
-    background-color: #f8f8f8;
-    border: none;
-    font-family: TT Lakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    display: flex;
-    padding: 16px;
-    padding-left: 0;
-    cursor: pointer; }
-    .brands-next-button::before {
-      content: '';
-      background: url(./static/expand.png) no-repeat;
-      height: 10px;
-      width: 5px;
-      padding: 5px;
-      margin-left: 8px;
-      display: flex;
-      margin-right: 16px; } }
 
 .brands--open {
   height: auto; }
@@ -1008,7 +985,8 @@ body {
   box-sizing: border-box;
   border-radius: 6px;
   display: flex;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 .brands-gadjets {
   height: 220px;
@@ -1025,7 +1003,8 @@ body {
   align-self: flex-end;
   margin-left: 65px;
   margin-bottom: 16px;
-  padding: 10px; }
+  padding: 10px;
+  outline: none; }
 
 .brands-gadjets__text {
   font-family: TT Lakes;
@@ -1047,39 +1026,30 @@ body {
     .brands-gadjets__pagination {
       display: none; } }
 
-@media (min-width: 768px) {
-  .brands__link {
-    width: 224px;
-    height: 72px; } }
+.brands__link {
+  outline: none; }
+  @media (min-width: 768px) {
+    .brands__link {
+      width: 224px;
+      height: 72px; } }
 
 .device--open {
   height: 200px; }
 
-.device-next-button {
+.brands-gadjets__next-button {
   display: none; }
   @media (min-width: 768px) {
-    .device-next-button {
+    .brands-gadjets__next-button {
       background-color: #f8f8f8;
-      border: none;
       font-family: TT Lakes;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
       display: flex;
       padding: 0;
-      cursor: pointer; }
-      .device-next-button::before {
-        content: '';
-        background: url(./static/expand.png) no-repeat;
-        height: 10px;
-        width: 5px;
-        padding: 5px;
-        margin-left: 8px;
-        display: flex;
-        margin-right: 16px; } }
+      margin-left: 28px; } }
   @media (min-width: 1124px) {
-    .device-next-button {
-      margin-left: 28px;
+    .brands-gadjets__next-button {
       padding-bottom: 18px;
       padding-top: 18px; } }
 
@@ -1187,17 +1157,19 @@ body {
 .submit-button {
   width: 119px;
   height: 32px;
-  border: 1px; }
+  border: 1px;
+  outline: none; }
 
 .price__link {
   text-decoration: none;
   width: 260px;
   height: 200px;
   box-sizing: border-box;
+  outline: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: 10px;
   background: #ffffff;
   border-radius: 6px;
   text-align: left; }
@@ -1240,14 +1212,15 @@ body {
       height: 56px; } }
 
 .price__submit-button {
+  outline: none;
   position: absolute;
   top: 140px;
   margin-left: 100px;
   margin-bottom: -50px; }
   @media (min-width: 768px) {
     .price__submit-button {
-      position: static;
-      margin-right: 70px;
+      position: relative;
+      top: -5;
       cursor: pointer; } }
 
 .price__pagination {
@@ -1310,7 +1283,7 @@ body {
     color: #7E7E82;
     mix-blend-mode: normal;
     opacity: 0.72;
-    margin-left: 12px; } }
+    margin-left: 8px; } }
 
 @media (min-width: 768px) {
   .money-capture {
@@ -1321,7 +1294,7 @@ body {
     color: #7E7E82;
     mix-blend-mode: normal;
     opacity: 0.72;
-    margin-left: -125px; } }
+    margin-left: -106px; } }
 
 @media (min-width: 768px) {
   .time-capture {
@@ -1332,7 +1305,7 @@ body {
     color: #7E7E82;
     mix-blend-mode: normal;
     opacity: 0.72;
-    margin-left: -200px; } }
+    margin-left: -168px; } }
 
 @media (min-width: 768px) {
   .section__footer-text {
@@ -1372,13 +1345,6 @@ body {
       margin-top: 6px;
       height: 16px;
       width: 10px; } }
-
-/* $var1: #7E7E82;
-$var2: #FFFFFF;
-$var3: #B8FFEC;
-$var4: #f8f8f8;
-$var5: #F8F8F8;
-$var6: #1B1C21; */
 
 
 /*# sourceMappingURL=style.css.map*/
