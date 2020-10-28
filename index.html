@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="style.css" rel="stylesheet"></head>
     <body>
-      
         <div class="wrapper"> 
-            <div class="overlay"></div>
-            <div class="overlay--modal"></div>
+            <div class="overlay overlay__menu"></div>
+            <div class="overlay overlay__modal"></div>
             <aside class="menu">
                     <header class="menu__header">
                         <button class="menu__close-button button button--close"></button>
@@ -54,26 +53,32 @@
                     </footer>
             </aside>
             <div class="modal modal--callback"> 
-                <form class="modal__form callback">
-                    <button class="button button--close button__close"></button>
-                    <h2 class="title callback__title">Обратная связь</h2>
-                        <input class="callback__input" placeholder="Имя">
-                        <input class="callback__input" placeholder="Телефон">
-                        <input class="callback__input" placeholder="Электронная почта">
-                        <textarea class="callback__input textarea" placeholder="Сообщение"></textarea>
-                    <p class="callback__text">Нажимая “отправить”, вы даете согласие на <a class="callback__text--color" href="#">обработку персональных данных </a>и соглашаетесь с нашей <a class="callback__text--color" href="#">
-                        политикой конфиденциальности</a></p>
-                    <button class="submit-buttons callback__submit-button submit-button--send"></button>
+                <form class="modal__form form">
+                    <button class="modal__close-btn button button--close"></button>
+                    <h2 class="modal__title title">Обратная связь</h2>
+                    <input class="modal__input" placeholder="Имя" name="name" type="text">
+                    <input class="modal__input" placeholder="Телефон" name="phone" type="tel">
+                    <input class="modal__input" placeholder="Электронная почта" name="email" type="email">
+                    <textarea class="modal__input textarea" placeholder="Сообщение" name="message"></textarea>
+                    <span class="modal__agreement">Нажимая “отправить”, вы даете согласие на 
+                        <a class="modal__agreement--link" href="#">обработку персональных данных </a>
+                        и соглашаетесь с нашей 
+                        <a class="modal__agreement--link" href="#">политикой конфиденциальности</a>
+                    </span>
+                    <button class="modal__submit-button submit-buttons submit-button--send"></button>
                 </form>
             </div>
             <div class="modal modal--call"> 
-                <form class="modal__form callback">
-                    <button class="button button--close phone-button__close"></button>
-                    <h2 class="title call__title">Заказать звонок</h2>
-                    <input class="callback__input" placeholder="Телефон"> 
-                    <p class="callback__text">Нажимая “отправить”, вы даете согласие на <a class="callback__text--color" href="#">обработку персональных данных </a>и соглашаетесь с нашей <a class="callback__text--color" href="#">
-                        политикой конфиденциальности</a></p>
-                    <button class="submit-buttons callback__submit-button submit-button--send"></button>
+                <form class="modal__form form">
+                    <button class="modal__close-btn button button--close"></button>
+                    <h2 class="modal__title title">Заказать звонок</h2>
+                    <input class="modal__input" placeholder="Телефон" name="phone" type="tel"> 
+                    <span class="modal__agreement">Нажимая “отправить”, вы даете согласие на 
+                        <a class="modal__agreement--link" href="#">обработку персональных данных </a>
+                        и соглашаетесь с нашей 
+                        <a class="modal__agreement--link" href="#"> политикой конфиденциальности</a>
+                    </span>
+                    <button class="submit-buttons modal__submit-button submit-button--send"></button>
                 </form>
             </div>
             <div class="content">
