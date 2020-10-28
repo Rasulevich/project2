@@ -1,0 +1,234 @@
+
+$var1: #f2f2f2;
+$var2: #ffffff;
+$var3: #1B1C21;
+$var4: #7E7E82;
+$var5: #41F6D7;
+$var6: #EAEAEA;
+$var7: #B5B6BC;
+$var8: #FF3E79;
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+    min-width: 320px;
+	background-color: #f8f8f8;
+	width: 100%;
+}
+.modal{
+	margin: 0;
+	width: 320px;
+	height: 100%;
+	box-shadow:  -2px 0px 4px rgba(69, 79, 126, 0.02), 
+				 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+}
+.modal--callback{
+	display: none;
+	margin-left: auto;
+	margin-right: 0;
+	padding-bottom: 30px;
+	position: absolute;
+	z-index: 50;
+	right: 0;
+}
+.modal--call{
+	display: none;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 0;
+	position: absolute;
+	z-index: 50;
+	right: 0;
+	padding-bottom: 25px;
+}
+.modal__form{
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	width: 320px;
+	background-color: white;
+	margin-bottom: 0;
+	height: 100%;
+	@media screen and (min-width: 768px) {
+		min-width: 450px;
+		width: 450px;
+		height: 100%;
+	}
+}
+input::placeholder{
+	color: #B5B6BC;
+}
+textarea::placeholder{
+	color: #B5B6BC;
+}
+.form{
+	overflow-y: auto;
+	// display: block;
+}
+.modal {
+	&__input {
+		width: 276px;
+		background: #FFFFFF;
+		border: 1px solid #EAEAEA;
+		display: flex;
+		margin: 16px;
+		border-radius: 8px;
+		padding: 8px;
+		color: #B5B6BC;
+	}
+	&__title {
+		font-family: TT Lakes;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		color: $var3;
+		margin: 0;
+		margin-left: 16px;
+		padding: 0;
+		&::before {
+			content: '';
+			height: 40px;
+			width: 4px;
+			background-color: $var5;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 0;
+			position: absolute;
+			left:-1px;
+			top:105px;
+		}
+	}
+	&__agreement {
+		font-family: TT Lakes;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0px;
+		text-align: left;
+		color: $var4;
+		margin: 16px;
+		&--link {
+			color: $var8;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+	&__submit-button {
+		position: relative;
+		margin-left: 150px;
+		@media screen and (min-width: 768px) {
+			position: relative;
+			margin-left: 250px;
+		}
+	}
+	&-open {
+		display: block;
+	}
+	&__title {
+		margin-top: 24px;
+		margin-left: 16px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
+		margin-right: 0;
+		margin-bottom: 0;
+		&__input {
+			width: 376px;
+			margin-left: 32px;
+		}
+		&__text {
+			margin-left: 32px;
+		}
+		&__title {
+			padding-top: 36px;
+			margin-left: 32px;
+			&::before {
+				content: '';
+				height: 40px;
+				width: 4px;
+				background-color: $var5;
+				border-radius: 3px;
+				display: inline-block;
+				padding: 0;
+				position: absolute;
+				left:-1px;
+				top:55px;
+			}
+		}	
+	}
+}
+
+.modal__close-btn {
+	margin-top: 44px;
+	margin-left: 14px;
+	outline: none;
+	display: block;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		margin-left: -70px;
+		margin-top: 55px;
+	}
+}
+.phone-button__close {
+	outline: none;
+	margin-top: 44px;
+	margin-left: 16px;
+	margin-bottom: 20px;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		margin-left: -70px;
+		margin-top: 64px;
+	}
+}
+.submit-button--send {
+	background: url(../img/sendButton.png);
+	background-size: 100%;
+}
+.submit-buttons {
+	width: 136px;
+	height: 32px;
+	border: none;
+	outline: none;
+}
+.textarea{
+	height: 100px;
+}
+.call__title{
+	margin-left: 16px;
+	&::before {
+		content: '';
+		height: 40px;
+		width: 4px;
+		background-color: $var5;
+		border-radius: 3px;
+		display: inline-block;
+		padding: 0;
+		position: absolute;
+		left:-1px;
+		top:124px;
+	}
+	@media screen and (min-width: 768px) {
+		&::before {
+			content: '';
+			height: 40px;
+			width: 4px;
+			background-color: $var5;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 0;
+			position: absolute;
+			left:-1px;
+			top:64px;
+		}
+		padding-top: 42px;
+		margin-left: 32px;
+	}
+}
+.modal--active{
+	display: block;
+}
