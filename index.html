@@ -7,8 +7,8 @@
     <link href="style.css" rel="stylesheet"></head>
     <body>
         <div class="wrapper"> 
-            <div class="overlay overlay__menu"></div>
-            <div class="overlay overlay__modal"></div>
+            <div class="overlay overlay--menu"></div>
+            <div class="overlay overlay--modal"></div>
             <aside class="menu">
                     <header class="menu__header">
                         <button class="menu__close-button button button--close"></button>
@@ -70,7 +70,7 @@
             </div>
             <div class="modal modal--call"> 
                 <form class="modal__form form">
-                    <button class="modal__close-btn button button--close"></button>
+                    <button class="modal__close-btn-phone button button--close"></button>
                     <h2 class="modal__title title">Заказать звонок</h2>
                     <input class="modal__input" placeholder="Телефон" name="phone" type="tel"> 
                     <span class="modal__agreement">Нажимая “отправить”, вы даете согласие на 
@@ -287,14 +287,14 @@
                 <section class="section">
                     <h1 class="section__title">Цены на услуги</h1>
                     <div class="price section__container swiper-container">
+                        <div class="price__item-capture">
+                            <div class="price__item-content">
+                                    <span class="name-capture">Ремонтные услуги</span>
+                                    <span class="money-capture">Цена</span>
+                                    <span class="time-capture">Срок</span>
+                            </div>                   
+                        </div>
                         <ul class="price__list swiper-wrapper">
-                            <li class="price__item-capture swiper-slide">
-                                <div class="price__item-content">
-                                        <span class="name-capture">Ремонтные услуги</span>
-                                        <span class="money-capture">Цена</span>
-                                        <span class="time-capture">Срок</span>
-                                </div>                   
-                            </li>
                             <li class="price__item swiper-slide">
                                 <a class="price__link" href="#">
                                 <div class="price__item-content">
@@ -374,9 +374,12 @@
                 </section>
                 <footer class="footer">
                     <ul class="footer__list">
-                        <li class="footer__item author"><div class="">© 2019 CPS<br> Разработано командой Apesong </div></li>
-                        <li class="footer__item polite"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
-                        <li class="footer__item public"><a class="footer__link" href="#">Информация, размещенная на данной странице, не является публичной офертой</a></li>
+                        <li class="footer__item footer__item--author">
+                            <span class="footer__text">© 2019 CPS</span>
+                            <span class="footer__text"> Разработано командой Apesong </span>
+                        </li>
+                        <li class="footer__item footer__item--polite"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+                        <li class="footer__item footer__item--public"><a class="footer__link" href="#">Информация, размещенная на данной странице, не является публичной офертой</a></li>
                     </ul>
                 </footer>
             </div>
