@@ -1,0 +1,32 @@
+.button {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+    cursor: pointer;
+    outline: none; 
+	border: 0;
+	&--call {
+    background-image: url(../img/header/call.png);
+	}
+	&--chat {
+    background-image: url(../img/header/chat.png);
+	}
+	&--profile {
+    background-image: url(../img/header/profile.png);
+	}
+	&--repair {
+    background-image: url(../img/header/repair.png);
+	}
+	&--checkstatus {
+    background-image: url(../img/header/checkstatus.png);
+    }
+    &--burger-menu {
+        background-image: url(../img/header/burger.png);
+	  }
+	&--close {
+		background-image: url(../img/header/close.png)
+	}
+	&--search {
+		background-image: url(../img/header/search.png);
+	}
+}

@@ -1,0 +1,101 @@
+.article__content {
+    display: block;
+    margin-left: 10px;
+    &-inner {
+        height: 90px;
+        margin-left: 16px;
+        margin-right: 16px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        &-inner {
+            height: 160px;
+            margin-left: 16px;
+            margin-right: 16px;
+            overflow: hidden;
+            padding: 5px;
+        }
+    }
+    @media screen and (min-width: 1366px) {  
+        &-inner {
+            height: 160px;
+            margin-left: 16px;
+            margin-right: 16px;
+            overflow: hidden;
+        }
+    }    
+    @media screen and (min-width: 1366px) {
+        margin-left: 14px;
+    }
+}
+.article {
+    &__text {
+	font-family: TT Lakes;
+	font-size: 14px;
+	line-height: 18px;
+    letter-spacing: 0.2px;
+    @media screen and (min-width: 768px) {
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+         }
+    }
+    &__image {
+        width: 100%;
+        margin-top: 16px;
+        height: 100%;
+        margin-bottom: 16px;
+        @media screen and (min-width: 768px) {
+            width: 320px;
+            height: 160px;
+            margin-top: 16px;
+            background: #f8f8f8;
+            border-radius: 6px;
+            margin-right: 16px;
+        }
+        @media screen and (min-width: 1366px) {
+            margin-top: 16px;
+            margin-left: auto;
+            background: #f8f8f8;
+            border-radius: 6px;
+            margin-right: 46px;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+    }
+    &__next-button{
+        margin-left: 12px;
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px; 
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+}
+.next-button::before {
+	content: '';
+    background: url(../img/expand.png) no-repeat;
+	height: 10px;
+	width: 5px;
+	padding: 5px;
+	margin-left: 8px;
+	display: flex;
+	margin-right: 16px;
+}
+.next-button-click::before{
+    transform: scale(1, -1);
+    margin-top: 4px;
+}
+.img-logo {
+    min-width: 320px;
+    width: 100%;
+    @media screen and (max-width: 1120px) {
+    }
+}
+.text--open{
+    height: auto;
+}
