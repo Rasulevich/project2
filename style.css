@@ -803,7 +803,7 @@ textarea::placeholder {
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #1B1C21;
     margin-left: 16px;
@@ -957,7 +957,7 @@ textarea::placeholder {
     font-family: TT Lakes;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.2x;
+    letter-spacing: 0.2px;
     color: #1B1C21; }
   .price__time {
     font-family: TT Lakes;
@@ -985,9 +985,9 @@ textarea::placeholder {
     width: 260px;
     height: 200px;
     padding: 16px;
-    border: 1px solid light-grey;
+    border: none;
     border-radius: 6px;
-    background: map-get white; }
+    background: transparent; }
     @media (min-width: 768px) {
       .price__capture-content {
         display: grid;
@@ -1011,7 +1011,7 @@ textarea::placeholder {
       font-family: TT Lakes;
       font-size: 14px;
       line-height: 18px;
-      letter-spacing: 0.2x;
+      letter-spacing: 0.2px;
       color: #7E7E82;
       mix-blend-mode: normal;
       opacity: 0.72;
@@ -1082,7 +1082,7 @@ textarea::placeholder {
       height: 56px; } }
 
 @media (min-width: 768px) {
-  .mobile-versions {
+  .price__mobile-versions {
     display: none; } }
 
 @media (min-width: 768px) {
@@ -1090,7 +1090,7 @@ textarea::placeholder {
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
+    letter-spacing: -0.2px;
     text-align: left;
     text-decoration: none;
     color: black;
@@ -1190,7 +1190,7 @@ textarea::placeholder {
       font-family: TT Lakes;
       font-size: 14px;
       line-height: 20px;
-      letter-spacing: 0.20000000298023224px;
+      letter-spacing: 0.2px;
       text-align: left;
       color: #1B1C21; } }
 
