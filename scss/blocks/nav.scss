@@ -1,0 +1,39 @@
+.nav{
+	&__list {
+		display: flex;
+		overflow: hidden;
+		overflow-x: scroll;
+		flex-wrap: nowrap;
+		list-style-type: none;
+		@media screen and (min-width: 1366px) {
+			overflow: hidden;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+	}
+	&__item {
+		padding: 10px;
+		margin-left: -20px;
+	}
+	&__link {
+		padding: 8px;
+		background-color: #F8F8F8;
+		border: none;
+		cursor: pointer;
+		padding-left: 16px;
+		padding-right: 20px;
+		font-family: TT Lakes;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2 px;
+		color:  #7E7E82;
+		white-space: nowrap;
+		text-decoration: none;
+		&--active {
+			background: #ffffff;
+			border: 2px solid  #B8FFEC;
+			box-sizing: border-box;
+			border-radius: 6px;
+		}
+	}
+}

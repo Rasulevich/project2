@@ -1,0 +1,91 @@
+.brands {
+    height: 140px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    margin-left: 10px;
+    &__list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: nowrap;
+        @media (min-width: 768px) {
+          min-width: 768px;
+          flex-wrap: wrap;
+          display: flex;
+          overflow: hidden;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        outline: none;
+        width: 240px;
+        height: 72px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        background: #ffffff;
+        border-radius: 6px;
+        @media (min-width: 768px) {
+          width: 224px;
+          height: 72px;
+        }
+    }
+    &__button { 
+        margin-left: auto;
+        outline: none;
+    }
+    &__next-button {
+        display: none;
+        visibility: hidden;
+        @media (min-width: 768px) {
+            display: flex;
+            visibility: visible;
+            margin-left: 28px;
+            padding: 16px;
+            padding-left: 0;
+            background-color: #f8f8f8;
+            font-family: TT Lakes;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+    }
+    &__pagination {
+      border: none;
+      background: #F8F8F8;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &__item {
+        list-style-type: none;
+        max-height: 72px;
+        max-width: 240px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.3;
+        }
+        @media (min-width: 768px) {
+            max-width: 224px;
+            margin-left: 16px;
+            overflow: hidden;
+        }
+    }
+    @media (min-width: 768px) {
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 12px;
+    }
+    @media (min-width: 1124px) {
+      margin-left: 18px;
+    }
+}
+.brands--open {
+    height: auto;
+}

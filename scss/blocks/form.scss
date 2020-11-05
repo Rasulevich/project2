@@ -1,0 +1,49 @@
+.form{
+    &__input {
+		width: 276px;
+		background: #FFFFFF;
+		border: 1px solid #EAEAEA;
+		display: flex;
+		margin: 16px;
+		border-radius: 8px;
+		padding: 8px;
+		color: #B5B6BC;
+	}
+    &__agreement {
+		font-family: TT Lakes;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0px;
+		text-align: left;
+		color:  #7E7E82;
+		margin: 16px;
+		&--link {
+			color: #FF3E79;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+    &__submit-button {
+		font-family: TT Lakes;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: relative;
+        margin-left: 150px;
+        margin-right: 20px;
+        cursor: pointer;
+        @media screen and (min-width: 768px) {
+            position: relative;
+            margin-left: 280px;
+            margin-right: 20px;
+        }
+	}
+    @media screen and (min-width: 768px) {
+        &__input {
+			width: 376px;
+			margin-left: 32px;
+		}
+    }
+}

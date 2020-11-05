@@ -1,0 +1,150 @@
+
+
+.menu {
+	display: none;
+	z-index: 20;
+	margin-left: 0;
+	box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+	flex-direction: column;
+	max-width: 320px;
+	width: 320px;
+	overflow: scroll;
+	background-color: #ffffff;
+	min-height:100%;
+	&__header {
+		display: flex;
+		align-items: center;
+		height: 90px;
+		padding: 0 24px;
+		margin-top: 16px;
+
+	}
+	&__logo {
+		margin-left: 16px;
+	}
+	&__search-button {
+		margin-left: auto;
+	}
+	&__nav {
+		display: flex;
+	}	
+	&__nav-list {
+		list-style-type: none;
+		padding: 0;
+	}
+	&__nav-item {
+		margin-bottom: 8px;
+		display: flex;
+	}
+	&__nav-link {
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: 40px;
+		padding: 8px ;
+		outline: none;
+		margin-left: 18px;
+		text-decoration: none;
+		color: #1B1C21;
+		font-family: "TT Lakes Medium",sans-serif;
+		transition: color 0.4s ease-in;
+		&:hover {
+			color:  #7E7E82;
+		}
+		&--active {
+			color:  #7E7E82;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 12px;
+				left: -18px;
+				height: 32px;
+				width: 4px;
+				background-color:  #41F6D7;
+				border-radius: 3px;
+			}
+		}
+	}
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0 24px 0px 24px;
+	}
+	&-contact-list__item {
+		margin-left: 0px;
+		margin-right: 16px;
+		padding: 0;
+	}
+	&__email {
+		margin-top: 16px;
+		text-decoration: none;
+		color:#1B1C21;
+		font-family: 'TT Lakes Medium', sans-serif;
+	}
+	&__phone {
+		margin-top: 12px;
+		text-decoration: none;
+		color: #1B1C21;
+		font-family: 'TT Lakes Bold', sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+	}
+	&__lang-list {
+		margin-top: 40px;
+		display: flex;
+		padding: 0;
+		font-family: 'TT Lakes Medium', sans-serif;
+		&-item {
+			list-style-type: none;
+			margin-right: 8px;
+		}
+		&-link {
+			text-decoration: none;
+			color:#1B1C21;
+			&--active {
+				color:  #7E7E82;
+			}
+			&:hover {
+				color:  #7E7E82;
+			}
+		}
+	}
+	@media screen and (min-width: 1366px) {
+		overflow: auto;
+		height: 100%;
+		box-shadow: none;
+		display: flex;
+		width: 100%;
+		&__logo {
+			display: block;
+		}
+		&__nav-item {
+			margin-bottom: -2px;
+		}
+	}
+	&__contact-list {
+		display: flex;
+		margin-right: auto;
+	}
+	&__close-button {
+		@media screen and (min-width: 1366px) {
+			display: none;
+		}
+	}
+	&--active{
+		display: block;
+		z-index: 20;
+		position: absolute;
+		height: 100%;
+		overflow: scroll;
+	}
+}
+.menu-container {
+    @media screen and (min-width: 1366px) {
+        display: flex;
+    }
+}
+
+
+

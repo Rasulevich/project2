@@ -1,0 +1,13 @@
+.title::before {
+	content: '';
+    background-image: url(../img/highlight.png);
+	height: 40px;
+	width: 4px;
+	margin-right: 20px;
+}
+.title {
+	font-family: TT Lakes ;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.6px;
+}

@@ -1,0 +1,18 @@
+.content {
+    min-width:320px;
+    font-family: 'TT Lakes Condensed';
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+        font-family: 'TT Lakes Condensed';
+        min-width: 768px;;
+    }
+    @media screen and (min-width: 1366px) {
+        font-family: 'TT Lakes Condensed';
+        min-width: 1120px;
+        background: #F8F8F8;
+        flex-basis: 80;
+        flex-direction: column;
+    }
+}

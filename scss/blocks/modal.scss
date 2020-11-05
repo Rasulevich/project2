@@ -1,0 +1,126 @@
+
+.modal {
+	margin: 0;
+	width: 320px;
+	height: 100%;
+	background: white;
+	box-shadow:  -2px 0px 4px rgba(69, 79, 126, 0.02), 
+				 16px 0px 52px rgba(14, 24, 80, 0.2);
+	&__form{
+		display: flex;
+		flex-direction: column;
+		min-width: 320px;
+		width: 320px;
+		background-color: white;
+		margin-bottom: 0;
+		height: 100%;
+		@media screen and (min-width: 768px) {
+			min-width: 450px;
+			width: 450px;
+			height: 100%;
+		}
+	}
+	&--call{
+		display: none;
+		margin-left: auto;
+		margin-right: 0;
+		margin-bottom: 0;
+		position: absolute;
+		z-index: 50;
+		right: 0;
+		padding-bottom: 25px;
+	}
+	&--callback{
+		display: none;
+		margin-left: auto;
+		margin-right: 0;
+		padding-bottom: 30px;
+		position: absolute;
+		z-index: 50;
+		right: 0;
+	}
+	&__title {
+		font-family: TT Lakes;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		color: #1B1C21;
+		margin: 0;
+		margin-left: 16px;
+		padding: 0;
+		&::before {
+			content: '';
+			height: 40px;
+			width: 4px;
+			background-color: #41F6D7;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 0;
+			position: absolute;
+			left:-1px;
+			top:105px;
+		}
+	}
+	&__close-btn {
+		margin-top: 44px;
+		margin-left: 14px;
+		outline: none;
+		display: block;
+		cursor:pointer; 
+		padding: 20px;
+		@media screen and (min-width: 768px) {
+			position: absolute;
+			margin-left: -70px;
+			margin-top: 55px;
+		}
+	}
+	&__close-btn-phone {
+		margin-top: 44px;
+		margin-left: 14px;
+		outline: none;
+		display: block;
+		cursor:pointer; 
+		padding: 20px;
+		@media screen and (min-width: 768px) {
+			position: absolute;
+			margin-left: -70px;
+			margin-top: 55px;
+		}
+	}
+	&-open {
+		display: block;
+	}
+	&__title {
+		margin-top: 24px;
+		margin-left: 16px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
+		margin-right: 0;
+		margin-bottom: 0;
+		width: 450px;
+		&__text {
+			margin-left: 32px;
+		}
+		&__title {
+			padding-top: 36px;
+			margin-left: 32px;
+			&::before {
+				content: '';
+				height: 40px;
+				width: 4px;
+				background-color: #41F6D7;
+				border-radius: 3px;
+				display: inline-block;
+				padding: 0;
+				position: absolute;
+				left:-1px;
+				top:55px;
+			}
+		}	
+	}
+}
+
+.modal--active{
+	display: block;
+}
