@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <title>CPS</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> 
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,7 +16,7 @@
                         <button class="menu__close-button button button--close"></button>
                             <div class="menu__logo">
                                 <a class="logo__link" href="#">
-                                    <img class="logo__img" src="./img/img logo/Group.png" alt="logotip">
+                                    <img class="logo__img" src="./img/img_logo/Group.png" alt="logotip">
                                 </a>
                             </div>
                         <button class="menu__search-button button button--search"></button>
@@ -53,40 +55,40 @@
                     </footer>
             </aside>
             <div class="modal modal--callback"> 
-                <form class="modal__form form">
                     <button class="modal__close-btn button button--close"></button>
                     <h2 class="modal__title title">Обратная связь</h2>
-                    <input class="modal__input" placeholder="Имя" name="name" type="text">
-                    <input class="modal__input" placeholder="Телефон" name="phone" type="tel">
-                    <input class="modal__input" placeholder="Электронная почта" name="email" type="email">
-                    <textarea class="modal__input textarea" placeholder="Сообщение" name="message"></textarea>
-                    <span class="modal__agreement">Нажимая “отправить”, вы даете согласие на 
-                        <a class="modal__agreement--link" href="#">обработку персональных данных </a>
-                        и соглашаетесь с нашей 
-                        <a class="modal__agreement--link" href="#">политикой конфиденциальности</a>
-                    </span>
-                    <button class="modal__submit-button submit-buttons submit-button--send"></button>
-                </form>
+                    <form class="modal__form form">
+                        <input class="form__input" placeholder="Имя" name="name" type="text">
+                        <input class="form__input" placeholder="Телефон" name="phone" type="tel">
+                        <input class="form__input" placeholder="Электронная почта" name="email" type="email">
+                        <textarea class="form__input" placeholder="Сообщение" name="message"></textarea>
+                        <span class="form__agreement">Нажимая “отправить”, вы даете согласие на 
+                            <a class="modal__agreement--link" href="#">обработку персональных данных </a>
+                            и соглашаетесь с нашей 
+                            <a class="modal__agreement--link" href="#">политикой конфиденциальности</a>
+                        </span>
+                        <button class="form__submit-button submit-buttons">Отправить </button>
+                    </form>
             </div>
             <div class="modal modal--call"> 
-                <form class="modal__form form">
                     <button class="modal__close-btn-phone button button--close"></button>
                     <h2 class="modal__title title">Заказать звонок</h2>
-                    <input class="modal__input" placeholder="Телефон" name="phone" type="tel"> 
-                    <span class="modal__agreement">Нажимая “отправить”, вы даете согласие на 
-                        <a class="modal__agreement--link" href="#">обработку персональных данных </a>
-                        и соглашаетесь с нашей 
-                        <a class="modal__agreement--link" href="#"> политикой конфиденциальности</a>
-                    </span>
-                    <button class="submit-buttons modal__submit-button submit-button--send"></button>
-                </form>
+                    <form class="modal__form form">
+                        <input class="form__input" placeholder="Телефон" name="phone" type="tel"> 
+                        <span class="form__agreement">Нажимая “отправить”, вы даете согласие на 
+                            <a class="modal__agreement--link" href="#">обработку персональных данных </a>
+                            и соглашаетесь с нашей 
+                            <a class="modal__agreement--link" href="#"> политикой конфиденциальности</a>
+                        </span>
+                        <button class="submit-buttons form__submit-button">Отправить </button>
+                     </form>
             </div>
             <div class="content">
                 <header class="header">
                     <button class="header__menu-btn button button--burger-menu"> 
                     </button>  
                     <div class="header__logo logo"><a class="logo__link" href="#">
-                        <img class="logo__img" src="./img/img logo/Group.png" alt="logotip"></a>
+                        <img class="logo__img" src="./img/img_logo/Group.png" alt="logotip"></a>
                     </div>
                 <ul class="contact-list header__contact-list">
                     <li class="contact-list__item header__contact-list-item"> <button class="contact-list__button button button--call"> 
@@ -159,91 +161,91 @@
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Lenovo.png" alt="Lenovo">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Samsung.png" alt="Samsung">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Apple.png" alt="Apple">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Bosch.png" alt="Bosch">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Hp.png" alt="Hp">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Acer.png" alt="Acer">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Lenovo.png" alt="Lenovo">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Samsung.png" alt="Samsung">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Apple.png" alt="Apple">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Bosch.png" alt="Bosch">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Acer.png" alt="Acer">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>   
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Hp.png" alt="Hp">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Samsung.png" alt="Samsung">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Apple.png" alt="Apple">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands__item swiper-slide">
                                 <a class="brands__link" href="#">
                                     <img class="brands__img" src="./img/service/Bosch.png" alt="Bosch">
-                                    <button class="brands__button button button--open"></button>
+                                    <span class="brands__button button button--open"></span>
                                 </a>
                             </li>      
                         </ul>
@@ -252,31 +254,31 @@
                     <button class="next-button brands__next-button">Показать все</button>
                 </section>
                 <section class="section">
-                    <h1 class="section__title">Ремонт различных видов техники</h1>
+                    <h2 class="section__title">Ремонт различных видов техники</h2>
                     <div class="brands-gadjets section__container swiper-container">
                         <ul class="brands-gadjets__list swiper-wrapper">
                             <li class="brands-gadjets__item swiper-slide">
                                 <a class="brands-gadjets__link" href="#">
                                     <span class="brands-gadjets__text">Ремонт ноутбуков</span>
-                                    <button class="brands-gadjets__button button button--open"></button>
+                                    <span class="brands-gadjets__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands-gadjets__item swiper-slide">
                                 <a class="brands-gadjets__link" href="#">
                                     <span class="brands-gadjets__text">Ремонт планшетов</span>
-                                    <button class="brands-gadjets__button button button--open"></button>
+                                    <span class="brands-gadjets__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands-gadjets__item swiper-slide">
                                 <a class="brands-gadjets__link" href="#">
                                     <span class="brands-gadjets__text">Ремонт Пк</span>
-                                    <button class="brands-gadjets__button button button--open"></button>
+                                    <span class="brands-gadjets__button button button--open"></span>
                                 </a>
                             </li>
                             <li class="brands-gadjets__item swiper-slide">
                                 <a class="brands-gadjets__link" href="#">
                                     <span class="brands-gadjets__text">Ремонт мониторов</span>
-                                    <button class="brands-gadjets__button button button--open"></button>
+                                    <span class="brands-gadjets__button button button--open"></span>
                                 </a>
                             </li>                      
                         </ul>
@@ -285,7 +287,7 @@
                     <button class="next-button brands-gadjets__next-button">Показать все
                 </button></section>
                 <section class="section">
-                    <h1 class="section__title">Цены на услуги</h1>
+                    <h2 class="section__title">Цены на услуги</h2>
                     <div class="price section__container swiper-container">
                         <div class="price__capture">
                             <div class="price__capture-content">
@@ -303,7 +305,7 @@
                                     <span class="price__money">Бесплатно</span>
                                     <h5 class="price-item__title price__mobile-versions">Срок</h5>
                                     <span class="price__time">30 мин</span>
-                                    <button class="price__submit-button submit-button button--buy"></button>
+                                    <button class="price__submit-button submit-buttons">Заказать</button> 
                                 </div>    
                             </li>
                             <li class="price__item swiper-slide">
@@ -314,7 +316,7 @@
                                         <span class="price__money">1000 Р</span>
                                         <h5 class="price-item__title price__mobile-versions">Срок</h5>
                                         <span class="price__time">30-120 мин</span>
-                                        <button class="price__submit-button submit-button button--buy"></button>
+                                        <button class="price__submit-button submit-buttons">Заказать</button>
                                     </div>
                             </li>
                             <li class="price__item swiper-slide">
@@ -325,7 +327,7 @@
                                         <span class="price__money">1000 Р</span>
                                         <h5 class="price-item__title price__mobile-versions">Срок</h5>
                                         <span class="price__time">30-120 мин</span>
-                                        <button class="price__submit-button submit-button button--buy"></button>
+                                        <button class="price__submit-button submit-buttons">Заказать</button>
                                     </div>
                             </li>
                             <li class="price__item swiper-slide">
@@ -336,7 +338,7 @@
                                         <span class="price__money">1000 Р</span>
                                         <h5 class="price-item__title price__mobile-versions">Срок</h5>
                                         <span class="price__time">30-120 мин</span>
-                                        <button class="price__submit-button submit-button button--buy"></button>
+                                        <button class="price__submit-button submit-buttons">Заказать</button>
                                     </div>
                             </li>
                             <li class="price__item swiper-slide">
@@ -347,7 +349,7 @@
                                         <span class="price__money">Бесплатно</span>
                                         <h5 class="price-item__title price__mobile-versions">Срок</h5>
                                         <span class="price__time">30 мин</span>
-                                        <button class="price__submit-button submit-button button--buy"></button>
+                                        <button class="price__submit-button submit-buttons">Заказать</button>
                                     </div>
                             </li>
                         </ul>

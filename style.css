@@ -197,8 +197,7 @@ body {
   font-family: 'TT Lakes Condensed';
   margin: 0;
   position: relative;
-  z-index: 2;
-  overflow-y: scroll; }
+  z-index: 2; }
   @media screen and (min-width: 768px) {
     .content {
       font-family: 'TT Lakes Condensed';
@@ -332,6 +331,7 @@ body {
   margin: 0;
   width: 320px;
   height: 100%;
+  background: white;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
   .modal__form {
     display: flex;
@@ -363,15 +363,6 @@ body {
     position: absolute;
     z-index: 50;
     right: 0; }
-  .modal__input {
-    width: 276px;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    display: flex;
-    margin: 16px;
-    border-radius: 8px;
-    padding: 8px;
-    color: #B5B6BC; }
   .modal__title {
     font-family: TT Lakes;
     font-size: 24px;
@@ -416,26 +407,6 @@ body {
         position: absolute;
         margin-left: -70px;
         margin-top: 55px; } }
-  .modal__agreement {
-    font-family: TT Lakes;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #7E7E82;
-    margin: 16px; }
-    .modal__agreement--link {
-      color: #FF3E79;
-      text-decoration: none;
-      outline: none; }
-  .modal__submit-button {
-    position: relative;
-    margin-left: 150px;
-    cursor: pointer; }
-    @media screen and (min-width: 768px) {
-      .modal__submit-button {
-        position: relative;
-        margin-left: 250px; } }
   .modal-open {
     display: block; }
   .modal__title {
@@ -447,9 +418,6 @@ body {
       margin-right: 0;
       margin-bottom: 0;
       width: 450px; }
-      .modal__input {
-        width: 376px;
-        margin-left: 32px; }
       .modal__text {
         margin-left: 32px; }
       .modal__title {
@@ -467,48 +435,15 @@ body {
           left: -1px;
           top: 55px; } }
 
-.submit-button--send {
-  background: url(./static/sendButton.png);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
 .submit-buttons {
   height: 32px;
   border: none;
-  outline: none; }
-
-.textarea {
-  height: 100px; }
+  outline: none;
+  background: #FF3E79;
+  border-radius: 16px; }
 
 .modal--active {
   display: block; }
-
-input::-webkit-input-placeholder {
-  color: #B5B6BC; }
-
-input::-moz-placeholder {
-  color: #B5B6BC; }
-
-input:-ms-input-placeholder {
-  color: #B5B6BC; }
-
-input::placeholder {
-  color: #B5B6BC; }
-
-textarea::-webkit-input-placeholder {
-  color: #B5B6BC; }
-
-textarea::-moz-placeholder {
-  color: #B5B6BC; }
-
-textarea:-ms-input-placeholder {
-  color: #B5B6BC; }
-
-textarea::placeholder {
-  color: #B5B6BC; }
-
-.form {
-  overflow-y: auto; }
 
 @font-face {
   font-family: 'TT Lakes';
@@ -798,7 +733,8 @@ textarea::placeholder {
     margin-left: 65px;
     margin-bottom: 16px;
     padding: 10px;
-    outline: none; }
+    outline: none;
+    background-repeat: no-repeat; }
   .brands-gadjets__text {
     font-family: TT Lakes;
     font-size: 16px;
@@ -936,12 +872,16 @@ textarea::placeholder {
       .price__pagination {
         display: none; } }
   .price__submit-button {
-    outline: none;
-    position: absolute;
-    top: 140px;
+    font-family: TT Lakes;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
     margin-left: 100px;
     margin-bottom: -50px;
-    padding: 20px; }
+    padding-left: 30px;
+    padding-right: 30px; }
     @media (min-width: 768px) {
       .price__submit-button {
         position: relative;
@@ -1044,11 +984,6 @@ textarea::placeholder {
   background-color: white;
   background-size: 100%;
   background-repeat: no-repeat; }
-
-.submit-button {
-  width: 119px;
-  border: 1px;
-  outline: none; }
 
 .section-price {
   background-color: #F8F8F8; }
@@ -1256,6 +1191,51 @@ textarea::placeholder {
         margin-right: 16px; }
       .contact-list__button {
         display: flex; } }
+
+.form__input {
+  width: 276px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  margin: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  color: #B5B6BC; }
+
+.form__agreement {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #7E7E82;
+  margin: 16px; }
+  .form__agreement--link {
+    color: #FF3E79;
+    text-decoration: none;
+    outline: none; }
+
+.form__submit-button {
+  font-family: TT Lakes;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  margin-left: 150px;
+  margin-right: 20px;
+  cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .form__submit-button {
+      position: relative;
+      margin-left: 280px;
+      margin-right: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .form__input {
+    width: 376px;
+    margin-left: 32px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
